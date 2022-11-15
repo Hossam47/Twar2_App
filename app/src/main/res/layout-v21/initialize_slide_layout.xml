@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_s">
+
+    <ImageView
+        android:id="@+id/initialize_image"
+        android:layout_width="match_parent"
+        android:layout_height="420dp"
+        android:layout_below="@id/initialize_title"
+        android:layout_marginTop="48dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_intialize_profile"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.hossam.emergency.utils.CoolTextView
+        android:id="@+id/initialize_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:gravity="center_horizontal"
+        android:text="@string/init_your_profile"
+        android:textColor="@color/intro_color2"
+        android:textSize="36dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <com.hossam.emergency.utils.CoolButton
+        android:id="@+id/initialize_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/initialize_image"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/btn_intro"
+        android:padding="16dp"
+        android:text="@string/start_your_init"
+        android:textColor="@color/white"
+        android:textSize="@dimen/button_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/initialize_image" />
+
+    <ProgressBar
+        android:id="@+id/progress_bar_initialize"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="@color/primary_trans"
+        android:indeterminate="false"
+        android:indeterminateTint="@color/intro_color2"
+        android:max="100"
+        android:progress="1"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/initialize_btn" />
+
+    <com.hossam.emergency.utils.CoolTextView
+        android:id="@+id/text_progress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/progress_bar_initialize"
+        android:layout_marginTop="17dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:textColor="@color/intro_color2"
+        android:textSize="@dimen/description_text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/progress_bar_initialize"
+        app:layout_constraintVertical_bias="0.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

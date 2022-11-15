@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/signup_image"
+    tools:context=".ui.sign_in.SignInActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/primary_dark_trans_2">
+
+        <com.hossam.emergency.utils.CoolTextView
+            android:id="@+id/title_sign_up"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="?actionBarSize"
+            android:text="Twar2 App"
+            android:textColor="@color/white"
+            android:textSize="32sp" />
+
+        <LinearLayout
+            android:id="@+id/login_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_margin="16dp"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="4dp"
+                android:background="@drawable/o_white_trans"
+                android:gravity="center_vertical"
+                android:padding="4dp">
+
+                <ImageView
+                    android:id="@+id/email_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="4dp"
+                    android:src="@drawable/ic_mail_white_24dp"
+                    android:tint="@color/white" />
+
+                <AutoCompleteTextView
+                    android:id="@+id/email_sign_in"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_toEndOf="@id/email_icon"
+                    android:background="@null"
+                    android:hint="@string/email_create"
+                    android:inputType="textEmailAddress"
+                    android:textColor="@color/primary_dark"
+                    android:textColorHint="@color/primary"
+                    android:textCursorDrawable="@null"
+                    android:textSize="16sp" />
+
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="4dp"
+                android:background="@drawable/o_white_trans"
+                android:gravity="center_vertical"
+                android:padding="4dp">
+
+                <ImageView
+                    android:id="@+id/pass_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="4dp"
+                    android:src="@drawable/ic_lock_outline_white_24dp"
+                    android:tint="@color/white" />
+
+
+                <AutoCompleteTextView
+                    android:id="@+id/password_sign_in"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_toEndOf="@id/pass_icon"
+                    android:background="@null"
+                    android:gravity="start"
+                    android:hint="@string/password_create"
+                    android:inputType="textWebPassword"
+                    android:textColor="@color/primary_dark"
+                    android:textColorHint="@color/primary"
+                    android:textCursorDrawable="@null"
+                    android:textSize="16sp" />
+                <!--                <AutoCompleteTextView-->
+                <!--                    android:id="@+id/password_sign_in"-->
+                <!--                    android:layout_width="match_parent"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:layout_centerVertical="true"-->
+                <!--                    android:gravity="start"-->
+                <!--                    android:layout_marginStart="8dp"-->
+                <!--                    android:layout_marginEnd="8dp"-->
+                <!--                    android:layout_toEndOf="@+id/pass_icon"-->
+                <!--                    android:background="@null"-->
+                <!--                    android:hint="@string/password_create"-->
+                <!--                    android:inputType="textPassword"-->
+                <!--                    android:textColor="@color/primary_dark"-->
+                <!--                    android:textColorHint="@color/primary"-->
+                <!--                    android:textCursorDrawable="@null"-->
+                <!--                    android:textSize="16sp" />-->
+
+
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatCheckBox
+                    android:id="@+id/remember_sign_in"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/remember_create"
+                    android:textColor="@color/white"
+                    android:textSize="14sp"
+                    android:theme="@style/checkBoxStyle" />
+
+                <TextView
+                    android:id="@+id/forget_sign_in"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:text="@string/forget_password"
+                    android:textColor="@color/white"
+                    android:textSize="14sp" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:orientation="vertical">
+
+
+                <com.hossam.emergency.utils.CoolButton
+                    android:id="@+id/btn_sign_in"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/o_white_trans"
+                    android:text="@string/login_create"
+                    android:textColor="@color/primary_dark"
+                    android:textSize="14sp" />
+
+
+                <com.hossam.emergency.utils.CoolButton
+                    android:id="@+id/btn_sign_up_sign_in"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/o_orange"
+                    android:text="@string/create_account"
+                    android:textColor="@color/white"
+                    android:textSize="14sp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:orientation="vertical">
+
+
+                <com.facebook.login.widget.LoginButton
+                    android:id="@+id/login_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="36dp"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="8dp"
+                    android:textSize="12sp" />
+
+
+                <ImageView
+                    android:id="@+id/google_sign_in"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@mipmap/google" />
+
+
+            </LinearLayout>
+
+            <!--            <com.facebook.login.widget.LoginButton-->
+            <!--                android:id="@+id/facebook_login_fragment"-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="24dp"-->
+            <!--                android:layout_gravity="start"-->
+            <!--                android:layout_marginStart="32dp"-->
+            <!--                android:layout_marginTop="8dp"-->
+            <!--                android:background="@drawable/btn_app_dialog" />-->
+
+            <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_gravity="bottom"-->
+            <!--android:gravity="bottom"-->
+            <!--android:orientation="vertical">-->
+
+            <TextView
+                android:id="@+id/privacy_sign_in"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="16dp"
+                android:gravity="center_horizontal"
+                android:text="@string/by_signing_in"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+
+            <!--<LinearLayout-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_gravity="center_horizontal"-->
+            <!--android:gravity="center_horizontal"-->
+            <!--android:orientation="horizontal">-->
+
+            <!--<TextView-->
+            <!--android:id="@+id/terms_sign_in"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_margin="4dp"-->
+            <!--android:layout_weight="1"-->
+            <!--android:text="@string/action_terms"-->
+            <!--android:textColor="@color/white"-->
+            <!--android:textSize="12sp" />-->
+
+            <!--<TextView-->
+            <!--android:id="@+id/policy_sign_in"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_margin="4dp"-->
+            <!--android:layout_weight="1"-->
+            <!--android:text="@string/action_privacy"-->
+            <!--android:textColor="@color/white"-->
+            <!--android:textSize="12sp" />-->
+
+            <!--</LinearLayout>-->
+
+            <!--</LinearLayout>-->
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

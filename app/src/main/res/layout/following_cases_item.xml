@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:id="@+id/main_container_following_cases_items"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/container_card_following_cases_items"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="4dp">
+
+        <RelativeLayout
+            android:id="@+id/container_following_cases_items"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.hossam.emergency.utils.CoolTextView
+                android:id="@+id/title_following_cases"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:gravity="center_horizontal"
+                android:textSize="@dimen/title_text" />
+
+            <com.hossam.emergency.utils.CoolTextView
+                android:id="@+id/time_following_cases"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/title_following_cases"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="8dp"
+                android:gravity="center_horizontal"
+                android:textColor="@color/grey"
+                android:textSize="@dimen/small_number_text" />
+
+
+            <LinearLayout
+                android:id="@+id/reactions_container_following"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/time_following_cases"
+                android:layout_marginBottom="4dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginStart="16dp"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginEnd="8dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/view_image_following_cases"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical|center_horizontal"
+                        android:src="@drawable/baseline_visibility_white_24"
+                        android:tint="@color/grey" />
+
+                    <com.hossam.emergency.utils.CoolTextView
+                        android:id="@+id/view_numbers_following_cases"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical|center_horizontal"
+                        android:layout_margin="8dp"
+                        android:textSize="@dimen/small_number_text" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginEnd="8dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/fire_image_following_cases"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical|center_horizontal"
+                        android:src="@drawable/baseline_whatshot_white_18"
+                        android:tint="@color/grey" />
+
+                    <com.hossam.emergency.utils.CoolTextView
+                        android:id="@+id/fire_numbers_following_cases"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical|center_horizontal"
+                        android:layout_margin="8dp"
+                        android:textSize="@dimen/small_number_text" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginStart="8dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/comments_image_following_cases"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical|center_horizontal"
+                        android:src="@drawable/baseline_comment_white_18"
+                        android:tint="@color/grey" />
+
+                    <com.hossam.emergency.utils.CoolTextView
+                        android:id="@+id/comments_numbers_following_cases"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical|center_horizontal"
+                        android:layout_margin="8dp"
+                        android:textSize="@dimen/small_number_text" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_below="@+id/reactions_container_following"
+                android:orientation="horizontal">
+
+                <com.hossam.emergency.utils.CoolButton
+                    android:id="@+id/delete_button_following_cases"
+                    android:layout_width="match_parent"
+                    android:layout_height="36dp"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:background="@null"
+                    android:text="@string/unfollow_post"
+                    android:textColor="@color/orange_solid"
+                    android:textSize="@dimen/button_text" />
+
+                <!--<View-->
+                <!--android:layout_width="1dp"-->
+                <!--android:background="@color/grey_trans"-->
+                <!--android:layout_gravity="bottom"-->
+                <!--android:layout_height="32dp"/>-->
+
+                <!--<com.hossam.emergency.utils.CoolButton-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="36dp"-->
+                <!--android:layout_marginTop="4dp"-->
+                <!--android:layout_weight="1"-->
+                <!--android:background="@null"-->
+                <!--android:textSize="12sp"-->
+                <!--android:text="view"-->
+                <!--android:textColor="@color/grey" />-->
+            </LinearLayout>
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

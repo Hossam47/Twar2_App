@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_margin="16dp"
+        android:foreground="?android:attr/selectableItemBackground"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="16dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true">
+
+
+            <com.hossam.emergency.utils.CoolTextView
+                android:id="@+id/title_rate_dialog"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/image_profile_phone_dialog"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                android:gravity="center_horizontal"
+                android:padding="8dp"
+                android:text="@string/rate_comic"
+                android:textColor="@color/primary_dark"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/rate_image"
+                android:layout_width="match_parent"
+                android:layout_height="240dp"
+                android:layout_below="@id/title_rate_dialog"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/rate_image" />
+
+            <CheckBox
+                android:id="@+id/check_rate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rate_image"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="16dp"
+                android:gravity="end|center_vertical"
+                android:linksClickable="true"
+                android:text="متظهرش الرسالة ده تانى "
+                android:textColor="@color/primary_dark"
+                android:textColorHighlight="@color/primary"
+                android:textSize="@dimen/desc_text_size"
+                android:theme="@style/checkBoxStyle_update" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/check_rate"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:id="@+id/cancel_rate_dialog"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:foreground="?android:attr/selectableItemBackground">
+
+                    <com.hossam.emergency.utils.CoolTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:layout_margin="8dp"
+                        android:gravity="center_horizontal|center_vertical"
+                        android:text="@string/no_rate"
+                        android:textColor="@color/red_solid"
+                        android:textSize="@dimen/title_text" />
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/yes_rate_dialog"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:foreground="?android:attr/selectableItemBackground">
+
+                    <com.hossam.emergency.utils.CoolTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:layout_margin="8dp"
+                        android:text="@string/yes_rate"
+                        android:textColor="@color/green_solid"
+                        android:textSize="@dimen/title_text" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

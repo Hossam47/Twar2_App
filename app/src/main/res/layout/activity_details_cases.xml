@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context=".ui.detalis_cases.DetailsCases">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingTop="?actionBarSize"
+            android:paddingBottom="?actionBarSize">
+
+            <include
+                android:id="@+id/container_part1"
+                layout="@layout/part_one_detalis_activity" />
+
+
+            <include
+                android:id="@+id/container_part3"
+                layout="@layout/part_three_details_activity" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_details_cases"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_size"
+        android:background="@color/primary"
+        android:theme="@style/ToolbarColoredBackArrow"
+        app:layout_collapseMode="pin"
+        app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    <View
+        android:id="@+id/toolbar_shadow"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_below="@id/toolbar_details_cases"
+        android:background="@drawable/toolbar_dropshadow" />
+
+    <RelativeLayout
+        android:id="@+id/message_container_details"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center_vertical"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="4dp"
+        android:background="@drawable/background_semi_round">
+
+        <!--<ImageView-->
+        <!--android:id="@+id/image_icon"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentLeft="true"-->
+        <!--android:layout_centerVertical="true"-->
+        <!--android:layout_margin="8dp"-->
+        <!--android:src="@drawable/ic_menu_camera" />-->
+
+        <AutoCompleteTextView
+            android:id="@+id/comment_edit_text_details_cases"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="8dp"
+            android:layout_toStartOf="@id/sender_icon_text_details_cases"
+            android:background="@null"
+            android:gravity="start|center_vertical"
+            android:hint="@string/write_comment"
+            android:inputType="text"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:textColor="@color/primary_text"
+            android:textColorHint="@color/grey"
+            android:textCursorDrawable="@null"
+            android:textSize="16sp" />
+
+
+        <ImageView
+            android:id="@+id/sender_icon_text_details_cases"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="16dp"
+            android:src="@drawable/ic_send_white_24dp"
+            android:text="Reply"
+            android:tint="@color/grey" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/saved_message_container"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/btn_green_dialog">
+
+        <com.hossam.emergency.utils.CoolTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="This case is saved"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <!--    <LinearLayout-->
+    <!--        android:id="@+id/small_banner_details"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="50dp"-->
+    <!--        android:layout_above="@id/message_container_details"-->
+    <!--        android:orientation="vertical" />-->
+
+    <!--    <com.google.android.gms.ads.AdView-->
+    <!--        xmlns:ads="http://schemas.android.com/apk/res-auto"-->
+    <!--        android:id="@+id/ads_small_banner_details"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_centerHorizontal="true"-->
+    <!--        android:layout_above="@id/message_container_details"-->
+    <!--        ads:adSize="BANNER"-->
+    <!--        ads:adUnitId="ca-app-pub-3940256099942544/6300978111"/>-->
+</RelativeLayout>

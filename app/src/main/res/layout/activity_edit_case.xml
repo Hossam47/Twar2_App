@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.cases.CasesActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="76dp"
+            android:paddingBottom="60dp">
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="4dp"
+                android:textColorHint="@color/primary_trans"
+                android:theme="@style/style_edit_text">
+
+                <AutoCompleteTextView
+                    android:id="@+id/title_case"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:backgroundTint="@color/primary_trans"
+                    android:drawablePadding="8dp"
+                    android:gravity="start"
+                    android:hint="@string/title_case"
+                    android:maxLines="1"
+                    android:textColor="@color/primary_dark"
+                    android:textColorHint="@color/primary_trans"
+                    android:textIsSelectable="false"
+                    android:textSize="@dimen/form_text_input" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="4dp"
+                android:background="@null"
+                android:textColorHint="@color/primary_trans"
+                android:theme="@style/style_edit_text">
+
+                <AutoCompleteTextView
+                    android:id="@+id/desc_case"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="4dp"
+                    android:backgroundTint="@color/secondary_text"
+                    android:gravity="top"
+                    android:hint="@string/desc_case"
+                    android:lines="3"
+                    android:maxLines="100"
+                    android:textColor="@color/primary_dark"
+                    android:textColorHint="@color/primary_trans"
+                    android:textIsSelectable="false"
+                    android:textSize="@dimen/form_text_input" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <CheckBox
+                android:id="@+id/show_profile_case"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:text="@string/profile_case"
+                android:textColor="@color/primary"
+                android:textSize="@dimen/tab_text"
+                android:theme="@style/checkBoxStyle_update" />
+
+            <CheckBox
+                android:id="@+id/show_mobile_case"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:text="@string/mobile_case"
+                android:textColor="@color/primary"
+                android:textSize="@dimen/tab_text"
+                android:theme="@style/checkBoxStyle_update" />
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+    <com.hossam.emergency.utils.CoolButton
+        android:id="@+id/lunch_case"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/btn_red_dialog"
+        android:onClick="saveEditCaseData"
+        android:text="@string/edit_case"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_case"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_size"
+        android:background="@color/primary"
+        android:theme="@style/ToolbarColoredBackArrow"
+        app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+</RelativeLayout>

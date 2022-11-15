@@ -1,0 +1,11 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ui.detalis_cases.DetailsCases">
+    <item
+        android:id="@+id/action__btn_refresh"
+        android:orderInCategory="100"
+        android:icon="@drawable/baseline_sync_white_36"
+        android:title="@string/action_refresh"
+        app:showAsAction="always" />
+</menu>

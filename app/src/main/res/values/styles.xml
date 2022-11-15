@@ -1,0 +1,206 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#607D8B</item>
+        <item name="colorPrimaryDark">#455A64</item>
+        <item name="colorAccent">#FF5722</item>
+        <item name="colorControlNormal">@color/white_s</item>
+        <item name="colorControlActivated">@color/primary_dark_trans_2</item>
+        <item name="windowActionBarOverlay">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="radiobutton_style" parent="Theme.AppCompat.Light">
+        <item name="colorControlNormal">@color/primary_trans</item>
+        <item name="colorControlActivated">@color/primary_dark</item>
+    </style>
+    <!--    <item name="android:windowTranslucentStatus" tools:targetApi="kitkat">true</item>-->
+    <!--    <item name="android:windowTranslucentNavigation" tools:targetApi="kitkat">true</item>-->
+    <!--    <item name="android:statusBarColor" tools:targetApi="lollipop">@color/primary_dark_trans-->
+    <!--    </item>-->
+    <!--    <item name="android:windowContentOverlay">@color/primary_dark_trans_2</item>-->
+    <!--    <style name="AppTheme_trans" parent="Theme.AppCompat.Light.NoActionBar">-->
+    <!--        &lt;!&ndash; Customize your theme here. &ndash;&gt;-->
+    <!--        <item name="colorPrimary">@color/grey</item>-->
+    <!--        <item name="colorPrimaryDark">@color/grey_sec</item>-->
+    <!--        <item name="colorAccent">@color/red_solid_trans</item>-->
+    <!--        <item name="colorControlNormal">@color/white</item>-->
+    <!--        <item name="colorControlActivated">@color/white_trans</item>-->
+    <!--        <item name="windowActionBarOverlay">true</item>-->
+    <!--        <item name="android:statusBarColor" tools:targetApi="lollipop">-->
+    <!--            @color/grey_trans_150-->
+    <!--        </item>-->
+    <!--        <item name="android:windowContentOverlay">@null</item>-->
+    <!--    </style>-->
+
+    <style name="AppTheme.ActionBar.Transparent" parent="AppTheme">
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="windowActionBarOverlay">true</item>
+        <item name="android:fitsSystemWindows">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="colorPrimary">@color/grey</item>
+        <item name="android:statusBarColor" >
+            @color/grey
+        </item>
+        <item name="android:windowTranslucentStatus" >true</item>
+        <item name="android:windowTranslucentNavigation" >true</item>
+        <item name="android:windowDrawsSystemBarBackgrounds" >true</item>
+
+    </style>
+
+    <style name="AppTheme.TranslucentStatusBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="CustomDialogActivityTheme">
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+
+    </style>
+
+    <style name="menu_labels_style">
+
+        <item name="android:textColor">@color/secondary_text</item>
+        <item name="android:background">@color/white</item>
+
+    </style>
+
+
+    <style name="Transparent_theme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowBackground">@color/primary_dark_trans_2</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@android:anim/fade_out</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <!--<style name="radio_style_radio_group" parent="Theme.AppCompat.Light.NoActionBar">-->
+    <!--<item name="colorAccent">@color/midnight_trans</item>-->
+    <!--<item name="android:textColor">@color/text_mid_night</item>-->
+
+    <!--</style>-->
+
+    <!--<style name="radio_style_fine" parent="Theme.AppCompat.Light.NoActionBar">-->
+    <!--<item name="colorAccent">@android:color/holo_green_dark</item>-->
+    <!--<item name="android:textColor">@color/text_mid_night</item>-->
+
+    <!--</style>-->
+
+    <!--<style name="radio_style_help" parent="Theme.AppCompat.Light.NoActionBar">-->
+    <!--<item name="colorAccent">@android:color/holo_orange_dark</item>-->
+    <!--<item name="android:textColor">@color/text_mid_night</item>-->
+
+    <!--</style>-->
+
+    <!--<style name="radio_style_emeg" parent="Theme.AppCompat.Light.NoActionBar">-->
+    <!--<item name="colorAccent">@android:color/holo_red_dark</item>-->
+    <!--<item name="android:textColor">@color/text_mid_night</item>-->
+    <!--</style>-->
+
+    <style name="radio_style_create" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorAccent">@android:color/white</item>
+        <item name="android:textColorHint">@color/white</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="checkBoxStyle" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorAccent">@color/white</item>
+        <item name="android:textColorHint">@color/white</item>
+        <item name="colorControlNormal">@color/white</item>
+        <item name="colorControlActivated">@color/white</item>
+        <item name="colorControlHighlight">@color/white</item>
+    </style>
+
+    <style name="checkBoxStyle_terms" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorAccent">@color/white_trans</item>
+        <item name="android:textColorHint">@color/white_trans</item>
+        <item name="colorControlNormal">@color/white_trans</item>
+        <item name="colorControlActivated">@color/white</item>
+        <item name="colorControlHighlight">@color/white_trans</item>
+    </style>
+
+    <style name="checkBoxStyle_update" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorAccent">@color/primary_trans</item>
+        <item name="android:textColorHint">@color/primary_trans</item>
+        <item name="colorControlNormal">@color/primary_trans</item>
+        <item name="colorControlActivated">@color/primary</item>
+        <item name="colorControlHighlight">@color/primary_trans</item>
+    </style>
+
+    <style name="checkBoxStyle_intro" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorAccent">@color/intro_color1</item>
+        <item name="android:textColorHint">@color/intro_color1</item>
+        <item name="colorControlNormal">@color/intro_color1</item>
+        <item name="colorControlActivated">@color/intro_color1</item>
+        <item name="colorControlHighlight">@color/intro_color1</item>
+    </style>
+
+    <style name="checkBoxStyle_slide" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorAccent">@color/grey</item>
+        <item name="android:textColorHint">@color/grey</item>
+        <item name="colorControlNormal">@color/grey</item>
+        <item name="colorControlActivated">@color/red_solid_trans</item>
+        <item name="colorControlHighlight">@color/grey</item>
+    </style>
+
+    <style name="MySearchViewStyle" parent="Widget.AppCompat.SearchView">
+        <item name="searchHintIcon">@null</item>
+        <item name="android:textColorHint">@color/white</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="TabStyle" parent="TextAppearance.AppCompat.Widget.ActionBar.Title.Inverse">
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="Theme.App.Base" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorControlNormal">@color/white</item>
+        <item name="colorControlActivated">@color/white</item>
+        <item name="colorControlHighlight">@color/white</item>
+        <item name="android:textColorHint">@color/white</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="colorAccent">@color/white</item>
+    </style>
+
+    <style name="style_edit_text" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:textSize">16sp</item>
+        <item name="colorAccent">@color/primary</item>
+        <item name="android:textColorHint">@color/primary_trans</item>
+        <item name="colorControlNormal">@color/primary_trans</item>
+        <item name="colorControlActivated">@color/primary</item>
+        <item name="colorControlHighlight">@color/primary</item>
+    </style>
+
+    <style name="ToolbarColoredBackArrow" parent="AppTheme">
+        <item name="colorControlNormal">@color/white</item>
+        <item name="titleTextColor">@color/white</item>
+    </style>
+
+    <style name="FacebookLoginButton">
+        <item name="android:textSize">14sp</item>
+        <item name="android:background">@color/colorAccent</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:layout_marginBottom">10dp</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+    </style>
+    <style name="Theme.UiResources.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+
+</resources>

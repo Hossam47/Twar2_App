@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="8dp">
+
+        <LinearLayout
+            android:id="@+id/card_main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.hossam.emergency.utils.CoolTextView
+                android:id="@+id/title_location_dialog_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="16dp"
+                android:gravity="center"
+                android:textAllCaps="true"
+                android:textColor="@color/orange_solid"
+                android:text="@string/information_by_two_pounds"
+                android:textSize="24sp" />
+
+            <com.hossam.emergency.utils.CoolTextView
+                android:id="@+id/second_title_location_dialog_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="16dp"
+                android:lineSpacingMultiplier="1.2"
+                android:gravity="center"
+                android:text="@string/gps_find_places_near_me_fun"
+                android:textSize="20sp" />
+
+            <androidx.appcompat.widget.AppCompatCheckBox
+                android:id="@+id/check_show_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:text="@string/check_location_dialog"
+                android:textColor="@color/secondary_text"
+                android:textSize="14sp"
+                android:theme="@style/checkBoxStyle_update" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:orientation="horizontal">
+
+                <com.hossam.emergency.utils.CoolButton
+                    android:id="@+id/cancel_btn_location_dialog"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_red_dialog"
+                    android:text="@string/cancel_it_message"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/title_text_size" />
+
+                <com.hossam.emergency.utils.CoolButton
+                    android:id="@+id/accept_btn_location_dialog"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_green_dialog"
+                    android:text="@string/got_it_message"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/title_text_size" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

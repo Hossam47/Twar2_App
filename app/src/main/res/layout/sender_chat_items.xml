@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="24dp"
+    android:layout_marginTop="4dp"
+    android:layout_marginEnd="4dp"
+    android:layout_marginBottom="8dp">
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/image_sender_messenger"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="4dp"
+        app:border_color="@android:color/white"
+        app:border_width="2dp" />
+
+
+    <LinearLayout
+        android:id="@+id/container_sender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:padding="4dp"
+        android:layout_toStartOf="@+id/image_sender_messenger"
+        android:background="@drawable/message_sender_background"
+        android:orientation="vertical">
+
+
+
+        <com.hossam.emergency.utils.CoolTextView
+            android:id="@+id/message_message_sender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:layout_margin="4dp"
+            android:textColor="@color/white"
+            android:textSize="@dimen/description_text" />
+
+        <ImageView
+            android:id="@+id/image_message_sender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/message_message_sender"
+            android:layout_gravity="center_horizontal"
+            android:scaleType="centerCrop" />
+
+        <com.hossam.emergency.utils.CoolTextView
+            android:id="@+id/time_message_sender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|center_vertical"
+            android:layout_margin="4dp"
+            android:gravity="center_vertical"
+            android:textColor="@color/white"
+            android:textSize="@dimen/small_number_text" />
+    </LinearLayout>
+
+
+    <!--<com.hossam.emergency.utils.CoolTextView-->
+    <!--android:id="@+id/seen_message_sender"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_below="@+id/container_sender"-->
+    <!--android:layout_margin="4dp"-->
+    <!--android:layout_toStartOf="@+id/image_sender_messenger"-->
+    <!--android:gravity="center_vertical"-->
+    <!--android:text="seen"-->
+    <!--android:textColor="@color/grey_trans"-->
+    <!--android:textSize="10sp" />-->
+
+
+    <!--<com.hossam.emergency.utils.CoolTextView-->
+    <!--android:id="@+id/name_message_sender"-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="0dp"-->
+    <!--android:layout_alignParentEnd="true"-->
+    <!--android:layout_marginStart="8dp"-->
+    <!--android:layout_marginTop="4dp"-->
+    <!--android:layout_marginEnd="8dp"-->
+    <!--android:layout_marginBottom="4dp"-->
+    <!--android:text="Hossam Gamal"-->
+    <!--android:textColor="@color/grey"-->
+    <!--android:textSize="14sp" />-->
+
+</RelativeLayout>

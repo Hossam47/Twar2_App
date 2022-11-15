@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.cases.CasesActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="76dp"
+            android:paddingBottom="60dp">
+
+            <com.chivorn.smartmaterialspinner.SmartMaterialSpinner
+                android:id="@+id/type_case_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:gravity="center"
+                app:smsp_floatingLabelColor="@color/primary_dark"
+                app:smsp_floatingLabelSize="@dimen/form_text_input"
+                android:layout_gravity="center_horizontal"
+                app:smsp_floatingLabelText="@string/case_type"
+                app:smsp_hint="@string/choose_case_type"
+                app:smsp_hintColor="@color/primary_dark"
+                app:smsp_arrowPaddingBottom="16dp"
+                app:smsp_arrowPaddingTop="16dp"
+                app:smsp_arrowPaddingLeft="16dp"
+                app:smsp_arrowPaddingRight="16dp"
+                app:smsp_itemColor="@color/red_solid"
+                app:smsp_itemListColor="@color/primary"
+                app:smsp_itemListHintBackgroundColor="#808080"
+                app:smsp_itemListHintColor="#FFFFFF"
+                app:smsp_multilineError="false"
+                app:smsp_selectedItemListColor="@color/red_solid" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="4dp"
+                android:textColorHint="@color/primary_trans"
+                android:theme="@style/style_edit_text">
+
+                <AutoCompleteTextView
+                    android:id="@+id/title_case"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:backgroundTint="@color/primary_trans"
+                    android:drawablePadding="8dp"
+                    android:gravity="start"
+                    android:hint="@string/title_case"
+                    android:maxLines="1"
+                    android:textColor="@color/primary_dark"
+                    android:textColorHint="@color/primary_trans"
+                    android:textIsSelectable="false"
+                    android:textSize="@dimen/form_text_input" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="4dp"
+                android:background="@null"
+                android:textColorHint="@color/primary_trans"
+                android:theme="@style/style_edit_text">
+
+                <AutoCompleteTextView
+                    android:id="@+id/desc_case"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="4dp"
+                    android:backgroundTint="@color/secondary_text"
+                    android:gravity="top"
+                    android:hint="@string/desc_case"
+                    android:lines="3"
+                    android:maxLines="100"
+                    android:textColor="@color/primary_dark"
+                    android:textColorHint="@color/primary_trans"
+                    android:textIsSelectable="false"
+                    android:textSize="@dimen/form_text_input" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <CheckBox
+                android:id="@+id/show_profile_case"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:text="@string/profile_case"
+                android:textColor="@color/primary"
+                android:textSize="@dimen/tab_text"
+                android:theme="@style/checkBoxStyle_update" />
+
+            <CheckBox
+                android:id="@+id/show_mobile_case"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:text="@string/mobile_case"
+                android:textColor="@color/primary"
+                android:textSize="@dimen/tab_text"
+                android:theme="@style/checkBoxStyle_update" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16sp"
+                android:layout_marginBottom="16dp"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <com.xw.repo.BubbleSeekBar
+                    android:id="@+id/seek_bar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:bsb_bubble_color="@color/red_trans"
+                    app:bsb_bubble_text_color="@color/grey_trans"
+                    app:bsb_max="100"
+                    app:bsb_min="10"
+                    app:bsb_progress="20"
+                    app:bsb_second_track_color="@color/red_solid"
+                    app:bsb_section_count="9"
+                    app:bsb_section_text_position="bottom_sides"
+                    app:bsb_show_section_mark="true"
+                    app:bsb_show_thumb_text="true"
+                    app:bsb_track_color="@color/grey_trans" />
+
+                <com.hossam.emergency.utils.CoolTextView
+                    android:id="@+id/range_details"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="8dp"
+                    android:gravity="center_horizontal"
+                    android:text="@string/range_case"
+                    android:textSize="@dimen/number_text" />
+            </LinearLayout>
+
+            <com.hossam.emergency.utils.CoolButton
+                android:id="@+id/location_case"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="16dp"
+                android:background="@drawable/o_grey_trans"
+                android:gravity="center_horizontal|center_vertical"
+                android:padding="4dp"
+                android:text="@string/location_case"
+                android:textColor="@color/white"
+                android:textSize="@dimen/button_text" />
+
+
+            <com.hossam.emergency.utils.CoolButton
+                android:id="@+id/images_case"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="16dp"
+                android:background="@drawable/o_grey_trans"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="@string/Images_case"
+                android:textColor="@color/white"
+                android:textSize="@dimen/button_text" />
+
+            <androidx.recyclerview.widget.RecyclerView xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/images_recycler"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="16dp"
+                android:scrollbars="horizontal" />
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+    <com.hossam.emergency.utils.CoolButton
+        android:id="@+id/lunch_case"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/btn_green_dialog"
+        android:text="@string/publish_case"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_case"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_size"
+        android:background="@color/primary"
+        android:theme="@style/ToolbarColoredBackArrow"
+        app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    <View
+        android:id="@+id/toolbar_shadow"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_below="@id/toolbar_case"
+        android:background="@drawable/toolbar_dropshadow" />
+</RelativeLayout>

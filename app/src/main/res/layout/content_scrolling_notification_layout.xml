@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".notification.NotificationActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="48dp">
+
+            <androidx.recyclerview.widget.RecyclerView xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/notification_recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fillViewport="true"
+                android:paddingBottom="50dp"
+                android:scrollbars="none" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_notification_activity"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/primary"
+        android:theme="@style/ToolbarColoredBackArrow"
+        app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    <View
+        android:id="@+id/toolbar_shadow"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_below="@id/toolbar_notification_activity"
+        android:background="@drawable/toolbar_dropshadow" />
+
+    <com.victor.loading.rotate.RotateLoading
+        android:id="@+id/rotate_loading_alerts"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_centerInParent="true"
+        app:loading_color="@color/accent"
+        app:loading_width="5dp" />
+
+    <ImageView
+        android:id="@+id/no_notifications_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:orientation="vertical"
+        android:src="@drawable/ic_nodata"
+        android:visibility="invisible" />
+
+
+    <!--    <LinearLayout-->
+    <!--        android:id="@+id/small_banner_notification"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_alignParentBottom="true"-->
+    <!--        android:orientation="vertical" />-->
+
+
+    <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/ads_small_banner_notifications"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/banner_notifications_google_id" />
+
+</RelativeLayout>

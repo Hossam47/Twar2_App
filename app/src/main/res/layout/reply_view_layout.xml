@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/reply_card_view">
+
+        <ImageView
+            android:id="@+id/close_reply_dialog_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:src="@drawable/baseline_highlight_off_white_24"
+            android:tint="@color/grey" />
+
+
+        <com.hossam.emergency.utils.CoolTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="8dp"
+            android:gravity="center_vertical"
+            android:text="@string/replies_dialog"
+            android:textColor="@color/secondary_text"
+            android:textSize="20sp" />
+        <!--        <View-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="1dp"-->
+        <!--            android:layout_below="@id/close_reply_dialog_layout"-->
+        <!--            android:layout_marginBottom="8dp"-->
+        <!--            android:background="@color/grey_trans_50" />-->
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/image_reply_items"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_below="@+id/close_reply_dialog_layout"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="8dp"
+            android:scaleType="centerCrop"
+            app:border_color="@color/white_trans"
+            app:border_width="2dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/close_reply_dialog_layout"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="8dp"
+            android:layout_toEndOf="@+id/image_reply_items"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <com.hossam.emergency.utils.CoolTextView
+                android:id="@+id/name_item_reply"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:gravity="center_vertical"
+                android:textColor="@color/primary_text"
+                android:textSize="16sp" />
+
+            <com.hossam.emergency.utils.CoolTextView
+                android:id="@+id/time_item_reply"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:gravity="center_vertical"
+                android:textColor="@color/primary_text"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+
+        <com.hossam.emergency.utils.CoolTextView
+            android:id="@+id/comment_replies"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/image_reply_items"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="8dp"
+            android:gravity="center_horizontal"
+            android:textColor="@color/primary_text"
+            android:textSize="20sp" />
+
+
+
+        <androidx.recyclerview.widget.RecyclerView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/replies_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/comment_replies"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="8dp"
+            android:paddingBottom="50dp"
+            android:background="@color/white"
+            android:fillViewport="true"
+            android:scrollbars="none" />
+
+        <RelativeLayout
+            android:id="@+id/message_container_replies"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="4dp"
+            android:layout_marginBottom="4dp"
+            android:background="@drawable/background_semi_round">
+
+
+            <AutoCompleteTextView
+                android:id="@+id/reply_edit_text_replies"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="8dp"
+                android:background="@null"
+                android:gravity="start|center_vertical"
+                android:hint="@string/write_reply"
+                android:inputType="text"
+                android:layout_marginBottom="4dp"
+                android:layout_toStartOf="@+id/sender_icon_text_replies"
+                android:textColor="@color/primary_text"
+                android:textColorHint="@color/grey"
+                android:textCursorDrawable="@null"
+                android:textSize="16sp" />
+
+
+            <ImageView
+                android:id="@+id/sender_icon_text_replies"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="16dp"
+                android:src="@drawable/ic_send_white_24dp"
+                android:text="Reply"
+                android:tint="@color/grey" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

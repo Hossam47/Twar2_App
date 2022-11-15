@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/chat_container_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        app:cardCornerRadius="4dp"
+        app:cardElevation="2dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="4dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/image_chat_item"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="4dp"
+                app:border_color="@android:color/white"
+                app:border_width="2dp" />
+
+
+            <LinearLayout
+                android:id="@+id/name_container_chat_item"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@id/image_chat_item"
+                android:orientation="vertical"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp">
+
+                <com.hossam.emergency.utils.CoolTextView
+                    android:id="@+id/name_chat_item"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="start"
+                    android:textColor="@color/primary_dark"
+                    android:textSize="@dimen/name_text_high" />
+
+                <com.hossam.emergency.utils.CoolTextView
+                    android:id="@+id/message_chat_item"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="start"
+                    android:textColor="@color/grey"
+                    android:textSize="@dimen/description_text" />
+
+                <com.hossam.emergency.utils.CoolTextView
+                    android:id="@+id/time_chat_item"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:layout_marginTop="4dp"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/grey"
+                    android:textSize="@dimen/small_number_text" />
+            </LinearLayout>
+
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

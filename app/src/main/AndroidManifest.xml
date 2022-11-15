@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.hossam.emergency">
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.huawei.appmarket.service.commondata.permission.GET_COMMON_DATA" />
+
+    <!-- <uses-feature -->
+    <!-- android:name="android.hardware.location.network" -->
+    <!-- android:required="false" /> -->
+    <!-- <uses-feature -->
+    <!-- android:name="android.hardware.location.gps" -->
+    <!-- android:required="false" /> -->
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <application
+        android:name=".services.Twar2App"
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/twar2_fire_logo"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/twar2_fire_logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity android:name=".ui.settings.SettingsActivity" />
+        <activity android:name=".edit_case.EditCaseActivity" />
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+
+        <activity
+            android:name=".ui.main.MainActivity"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".ui.sign_in.SignInActivity" />
+        <activity android:name=".ui.sign_up.SignUpActivity" />
+        <activity
+            android:name=".ui.main.TransmissionActivity"
+            android:exported="true"
+            android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.cases.CasesActivity"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity android:name=".ui.main.LocationActivity" />
+        <activity android:name=".ui.list_cases.ListCasesActivity" />
+        <activity
+            android:name=".ui.detalis_cases.DetailsCases"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".ui.my_cases.MyCasesActivity" />
+        <activity android:name=".ui.following_cases.FollowingCasesActivity" />
+        <activity android:name=".ui.terms_condition.TermsActivity" />
+
+        <service
+            android:name=".services.ServiceLocation"
+            android:exported="false" />
+        <service
+            android:name=".services.FCMService"
+            android:exported="true"
+            android:permission="android.permission.BIND_JOB_SERVICE">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service
+            android:name=".services.FCMInstanceIdService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service> <!-- facebook_activity -->
+        <activity android:name="com.facebook.accountkit.ui.AccountKitActivity" />
+        <activity
+            android:name="com.facebook.accountkit.ui.AccountKitEmailRedirectActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="@string/account_kit_protocol_scheme" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation" />
+        <activity
+            android:name="com.facebook.CustomTabActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="@string/fb_login_protocol_scheme" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".facebook_account_kit.PhoneVerificationActivity" />
+
+        <activity android:name=".ui.profile_update.ProfileUpdateActivity" />
+
+        <activity
+            android:name=".utils.utils_activity.DisplayImageActivity"
+            android:theme="@style/Transparent_theme" />
+
+        <activity android:name=".ui.chat.ChatActivity" />
+
+        <activity android:name=".ui.messanger.MessangerActivity" />
+
+        <activity android:name=".notification.NotificationActivity" />
+
+        <activity
+            android:name=".ui.intro_main.IntroActivity"
+            android:theme="@style/AppTheme" />
+
+
+        <meta-data
+            android:name="com.facebook.accountkit.FacebookAppEventsEnabled"
+            android:value="false" />
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            />
+        <meta-data
+            android:name="com.google.android.gms.version"
+           />
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            tools:replace="android:value" />
+        <meta-data
+            android:name="com.facebook.accountkit.ApplicationName"
+            android:value="@string/app_name" />
+        <meta-data
+            android:name="com.facebook.accountkit.ClientToken" />
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationName"
+            android:value="@string/app_name" />
+
+
+    </application>
+
+</manifest>

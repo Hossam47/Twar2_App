@@ -1,0 +1,23 @@
+<resources>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+    </style>
+
+    <style name="AppTheme.TransparentTheme">
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+    </style>
+
+    <style name="LockScreenStyle" parent="@android:style/Theme.Wallpaper.NoTitleBar">
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+    </style>
+
+    <style name="AppTheme.TranslucentStatusBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowTranslucentStatus">true</item>
+    </style>
+</resources>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="CustomFontTextView">
+        <attr name="fontName" />
+    </declare-styleable>
+
+    <attr name="fontName" format="enum">
+
+        <enum name="quicksand" value="1" />
+        <enum name="cairo" value="2" />
+        <enum name="tajawal" value="3" />
+        <enum name="chrobot" value="4" />
+        <enum name="dosis_medium" value="5" />
+    </attr>
+
+    <declare-styleable name="TemplateView">
+        <attr name="gnt_template_type" format="reference" />
+    </declare-styleable>
+
+    <attr name="flow_horizontalSeparator" />
+    <attr name="flow_verticalSeparator" />
+    <attr name="motionProgress" />
+    <attr name="waveDecay" />
+    <attr name="motionPathRotate" />
+    <attr name="duration" />
+</resources>

@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">تطبيق طوارئ</string>
+
+    <!-- يهشمخل_forget_password -->
+
+    <string name="message_forget_password">اكتب البريد الالكترونى الخاص بك لاعادة تعين كلمة السر</string>
+    <string name="rest_password">اعادة تعين كلمة السر</string>
+
+
+
+    <!-- Case Type -->
+
+    <string name="case_type"> نوع الحالة </string>
+
+    <string name="set_type_case">من فضلك اختر نوع الحالة </string>
+
+    <string name="choose_case_type">اختار نوع الحالة</string>
+
+    <string name="accident_type_case">حالة_حادث</string>
+
+    <string name="kidnapping_type_case">حالة_خطف</string>
+
+    <string name="helping_type_case">مساعدة_انسانية</string>
+
+    <string name="lost_found_type_case">مفقودات</string>
+
+
+    <!-- Sign in -->
+
+    <string name="choose_image_create">اختر صورة</string>
+
+    <string name="first_name_create">الاسم الاول</string>
+
+    <string name="username_create">اللقب</string>
+
+    <string name="last_name_create">الاسم الثانى</string>
+
+    <string name="email_create">البريد الالكترونى</string>
+
+    <string name="email_format">الصيغة خطأ</string>
+
+    <string name="mobile_create">رقم الموبيل</string>
+
+    <string name="male_create">ذكر</string>
+
+    <string name="female_create">انثى</string>
+
+    <string name="password_create">كلمة السر</string>
+
+    <string name="country_name">البلد</string>
+
+    <string name="choose_country_name">اختر البلد</string>
+
+    <string name="choose_country_egypt">اختر مصر </string>
+
+    <string name="password_length">الرقم السرى يجب ان لا يقل عن 7 احرف</string>
+
+
+    <string name="password_conf_create">تأكيد كلمة السر</string>
+
+    <string name="account_create">انشاء</string>
+
+    <string name="sign_in_create">الدخول</string>
+
+    <string name="remember_create">تذكرنى</string>
+
+    <string name="login_create">الدخول</string>
+
+    <string name="create_account">انشاء حساب</string>
+
+    <string name="register">التسجيل</string>
+
+    <string name="forget_password">نسيت كلمة السر</string>
+
+    <string name="by_signing_up">أنا أوافق على الشروط والأحكام</string>
+
+    <string name="by_signing_in"> من خلال تسجيل الدخول ، فإنك توافق على شروط وأحكام تطبيق Twar2 App</string>
+
+    <string name="read_it">اقرأها من هنا</string>
+
+    <string name="registration_activity">التسجيل</string>
+
+    <!--login_message-->
+
+    <string name="email_wrong_login_message">البريد الالكترونى خطأ</string>
+
+    <string name="pass_wrong_login_message">كلمة السر خطأ</string>
+
+    <string name="wrong_data">خطأ فى البريد الالكترونى او كلمة السر </string>
+
+    <string name="verification_login_message">رسالة التحقق ارسلت الى </string>
+
+    <string name="falid_verification_login_message">فشل فى ارسال رسالة التحقق </string>
+
+    <string name="write_pass_login_message">من فضلك اكتب البريد الالكترونى </string>
+
+    <string name="sent_pass_login_message">كلمة السر ارسلت بنجاح الى بريدك الالكترونى</string>
+
+    <string name="account_found_login_message">الحساب غير موجود</string>
+
+    <string name="please_waiting_progress_message">من فضلك انتظر .......</string>
+
+    <string name="try_again">حدث شيئا ما خطاء, حاول مره اخرى فى وقت لاحق</string>
+
+    <string name="title_activity_maps">الخريطة</string>
+
+
+    <string name="action_share">مشاركة</string>
+
+    <string name="action_about">عن المطور</string>
+
+    <string name="action_rate">قيم التطبيق</string>
+
+    <string name="action_feed">رايك عن التطبيق</string>
+
+    <string name="action_sign_out">الخروج</string>
+
+
+    <!--Case-->
+    <string name="add_case">اضافة حالة جديدة</string>
+    <string name="case_location">موقع الحالة</string>
+    <string name="title_case">وصف قصير للحالة</string>
+    <string name="set_location_message_location">من فضلك حدد الموقع</string>
+    <string name="image_library">الصور</string>
+    <string name="all_image_library">كل الصور</string>
+    <string name="limite_image_library">هذا اقصى حد للصور</string>
+    <string name="select_image_library">لا شئ تم اختيارة !</string>
+    <string name="get_location_activity">حدد هذا الموقع</string>
+    <string name="desc_case">وصف كامل للحالة</string>
+    <string name="mobile_case">عرض رقم الموبيل</string>
+    <string name="profile_case">عرض الصورة</string>
+    <string name="location_case">موقع</string>
+    <string name="Images_case">صور</string>
+    <string name="publish_case">نشر</string>
+    <string name="edit_case">حفظ التعديلات</string>
+    <string name="title_message_case">اكتب عنوان الحالة </string>
+    <string name="desc_message_case">اكتب وصف الحالة </string>
+    <string name="edit_case_message_case">تم تعديل الحالة </string>
+    <string name="range_case">الحالة سوف ترسل الى جميع المستخدمين فى نطاق </string>
+    <string name="km_case"> كم </string>
+    <!--Fonts-->
+
+    <string name="quicksand">quicksand</string>
+    <string name="cairo" translatable="false">cairo</string>
+    <string name="tajawal">tajawal</string>
+    <string name="chrobot">chrobot</string>
+
+    <!--Services-->
+
+    <string name="gps_services_on">الموقع متاح</string>
+    <string name="gps_services_off">الموقع غير متاح</string>
+    <string name="network_services_on">متصل</string>
+    <string name="network_services_off">غير متصل</string>
+
+    <!--main-->
+
+    <string name="title_cases">اخر خمس حالات</string>
+    <string name="see_more">عرض المزيد</string>
+
+
+    <!--reaction-->
+
+    <string name="fire_reaction_text">مشتعل </string>
+    <string name="comment_reaction_text">تعليق </string>
+    <string name="view_reaction_text">مشاهدة </string>
+    <string name="useful_reaction_text">اعجبنى </string>
+    <string name="shit_reaction_text">لم يعجبنى </string>
+
+
+    <string name="zero_reaction_value">0</string>
+
+    <!--details_activity-->
+    <string name="numbers_comment">تعليق </string>
+    <string name="write_comment"> اكتب تعليق ... </string>
+    <string name="write_reply"> اكتب رد ... </string>
+    <string name="number_private">الرقم خاص</string>
+
+    <!--posts-->
+    <string name="delete_post">حذف </string>
+    <string name="saved_post">حفظ </string>
+    <string name="edit_post">تعديل </string>
+    <string name="delete_post_message">تم حذف حالتك بنجاح</string>
+    <string name="saved_post_message">عظيم.. !</string>
+    <string name="unfollow_post_message">تم</string>
+    <string name="unfollow_post">الغاء المتابعة  </string>
+
+
+    <string name="terms_data">اقراء شروط تطبيق طوارئ من هنا <a href="https://firebasestorage.googleapis.com/v0/b/emergency-47.appspot.com/o/Twar2_tems.pdf?alt=media&amp;token=277a0e52-dad1-4121-8d19-dbb4d002cf88" target="_top"></a></string>
+
+    <!--profile_activity-->
+    <string name="profile_update">تحديث</string>
+
+    <!--list_case-->
+    <string name="follow_case_list">متابعة</string>
+    <string name="unfollow_case_list">الغاء المتابعة</string>
+    <string name="following_case_list">متابع</string>
+
+    <!--details_activity-->
+    <string name="write_message">اكتب رسالة... </string>
+
+
+    <!--profile_activity-->
+    <string name="show_profile_image">عرض صورة الشخص</string>
+    <string name="private_message">رسالة خاصة</string>
+    <string name="phone_call">مكالمة هاتفية</string>
+
+
+    <!--notification_activity-->
+    <string name="case_notification">حالة جديدة !</string>
+    <string name="saved_case_notification">تم انقاذ الحالة الان</string>
+    <string name="message_notification">رسالة جديدة لك</string>
+    <string name="comment_notification">تعليق جديد</string>
+
+
+    /////////////////////////////////////////////////
+
+    <string name="yes">نعم</string>
+    <string name="no">لا</string>
+    <string name="action_refresh">تحديث</string>
+    <string name="rationale_location_contacts">مطلوب إذن الصور</string>
+
+
+    <string name="profile_navigation">الملف الشخصى </string>
+    <string name="mycases_navigation">حالاتى</string>
+    <string name="following_cases_navigation">حالات متبعة</string>
+    <string name="sign_out">الخروج</string>
+
+
+    <string name="cases_main">حالات</string>
+    <string name="alerts_main">اشعارات</string>
+    <string name="inbox_main">رسائل</string>
+
+
+    <string name="fire_filter">مشتعل</string>
+    <string name="time_filter">وقت</string>
+    <string name="near_filter">قريب</string>
+    <string name="save_filter">انقاذ</string>
+
+    <!-- deatlis-->
+
+    <string name="chat_details">دردشة</string>
+    <string name="call_details">مكالمة</string>
+    <string name="street_details">طريق</string>
+    <string name="place_details">موقع</string>
+
+
+    <!-- reactions-->
+
+    <string name="like_react">اعجبنى</string>
+    <string name="dislike_react">لم يعجبنى</string>
+    <string name="replyreact">رد</string>
+    <string name="replies_dialog">ردود</string>
+
+
+    <!--    intro-->
+    <string name="init_your_profile">تهيئة ملفك الشخصى</string>
+    <string name="start_your_init">بدأ التهيئة</string>
+    <string name="already_init">ملفك الشخصى بالفعل جاهز</string>
+    <string name="done_text">حسابك جاهز للاستخدام</string>
+    <string name="dont_text">لا تظهر هذا مرة اخرى </string>
+    <string name="prize_text">الجوائز </string>
+    <string name="competetion_text">التطبيق حاصل على المركز الاول فى شمال افريقيا والشرق الاوسط فى مجال خدمة المجتمع من Facebook </string>
+    <string name="details_text">التفاصيل</string>
+    <string name="yes_rate">من عنيا ❤️</string>
+    <string name="no_rate">لا مش هعمل rate</string>
+    <string name="response_rate">هى ده ال mentailty ال اتعلمتها فى ال school !</string>
+
+
+    <string name="intro_welcome">التطبيق الاول فى مصر لحالات الطوارئ الحاصل على المركز الاول فى الشرق الاوسط وشمال افريقيا من Facebook </string>
+
+    <string name="intro">التطبيق حاصل على المركز الاول فى شمال افريقيا والشرق الاوسط فى مجال خدمة المجتمع من Facebook </string>
+
+    <!--    <string name="rate_comic">ال Developer بيسلم عليك وبيقولك روح قيم ال App على ال playstore واكتب review حلو زيك كده , واقفل باب التطبيق وراك </string>-->
+
+    <!--    <string name="rate_comic">وحياة ام ال App يا users الى ما هيدخل يقيم التطبيق على Playstore ويكتب review حلو زيه كده , ما هخليه يعرف يخرج من ال App ال لو عمل restart </string>-->
+
+    <!--    <string name="rate_comic">يعنى يرضيك افضل شغال شهور فى التطبيق واحل bugs اكتر من الانفرادات ال ضيعها كريم بنزيما وف الاخر يجى user طيب كيوت مسمسم زيك كده ينسى يقيم التطبيق ؟ </string>-->
+    <string name="rate_comic">من فضلك ادعم التطبيق من خﻻل التقيم, حتى يصل لعدد اكبر من المستخدمين</string>
+
+
+    <string name="arabic_lang">العربية</string>
+    <string name="english_lang">الانجليزية</string>
+    <string name="language_text">اللغة</string>
+    <string name="save_settings">حفظ</string>
+    <string name="action_location">الموقع الحالى</string>
+    <string name="action_search">بحث</string>
+    <string name="information_by_two_pounds">معلومة حتى تستطيع تحديد مكانك </string>
+    <string name="check_location_dialog">ﻻ تظهر هذه الرسالة مرة اخرى</string>
+    <string name="location_message">من فضلك قم بتفعيل ال GPS</string>
+    <string name="got_it_message">حسناً</string>
+    <string name="cancel_it_message">الغاء</string>
+    <string name="on_click_back">مرة اخرى</string>
+    <string name="gps_find_places_near_me_fun">فى الخانة اﻻولى اكتب اسم المكان المراد تحديده, و فى الخانة الثانية اكتب اسم المدينة او الحى </string>
+    <string name="intro_what_tear2_details">شرح التطبيق ببساطة , انك لو وقعت فى مشكلة واحتجت مساعدة من اقرب الناس الى فى نفس موقعك الجغرافى , هتفتح التطبيق وتكتب تفاصيل مشكلتك مع شوية صور لو متاح , وتحدد مدى جغرافى ال من خلاله التطبيق هيبعت اشعار لكل الناس ال فى نفس المدى ال انت لسه محدده عشان يجو يساعدوك</string>
+    <string name="intro_what_twar2">ما هو تطبيق طورئ وكيف استخدمة؟ </string>
+    <string name="intro_exambles">امثلة على كيفية استخدام التطبيق </string>
+    <string name="example_car">مثال 1 : لو عربيتك عطلت على الدائرى لاى سبباً كان , هتفتح التطبيق وتكتب ان عربيتك عطلت على الدائرى و تحدد مدى جغرافى مثلا 20 كيلومتر , فا كل الناس الى فى نفس المدى ده هيجلهم اشعار بحالتك , خد بالك انك مش شرط تحط الموقع بتاعك الحقيقى , يعنى فرضا ان عربيتك عطلت عند شارع رقم 2 , تقدر تحط ان حالتك حصلت جمب شارع رقم 3 مثلا , كا نوع من الامان فى حالة استخدام بعض ال users التطبيق بصورة سلبية خليك ناصح بدل ما حد يعرف مكانك الحقيقى</string>
+    <string name="intro_examble1">مثال 2 :كنت فى مستشفى ومحتاج حد يتبرع بالدم ضرورى , هتكتب تفاصيل الحالة بتاعتك زى نوع فصيلة الدم وحالة المريض ,وتقدر تفعل رقم موبيلك لسهولة التواصل وهتعمل نفس الخطوات الى فى الحالة ال فاتت</string>
+    <string name="intro_examble2">مثال 3 : لو نسيت ورق مهم او شئ مهم فى مكانا ما , بدل ما تروح نفس المكان وتدور عليه , تقدر تحدد المكان ال كنت فيه وتنزل حالة انك نسيت ورق مهم وتفعل رقم موبيلك او الشات , عشان لو حد لاقى الورق ده يعرف يتواصل معاك</string>
+    <string name="intro_final_tip">1- التطبيق بيخلى مسؤوليته عن اى سوء استخدام للتطبيق , وان كل user مسؤول عن سلامة نفسه</string>
+    <string name="important_tips">ملاحظات مهمة :</string>
+
+
+
+</resources>

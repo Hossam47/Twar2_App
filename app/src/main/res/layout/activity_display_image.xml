@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_layout_display_activity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".utils.utils_activity.DisplayImageActivity">
+
+
+    <androidx.recyclerview.widget.RecyclerView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/images_swipe_recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:scrollbars="none" />
+
+    <com.hossam.emergency.utils.gesture_image.GestureImageView
+        android:id="@+id/image_display"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true" />
+
+</RelativeLayout>

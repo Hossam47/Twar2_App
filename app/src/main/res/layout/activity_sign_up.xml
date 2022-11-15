@@ -1,0 +1,423 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/signin_image"
+    android:orientation="vertical"
+    tools:context=".ui.sign_up.SignUpActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/primary_dark_trans_2">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar_sign_up"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_alignParentTop="true"
+            android:background="@color/primary_dark_trans"
+            android:theme="@style/ToolbarColoredBackArrow" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/image_sign_up"
+            android:layout_width="84dp"
+            android:layout_height="84dp"
+            android:layout_below="@+id/toolbar_sign_up"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/twar2_fire_logo"
+            app:border_color="@color/white_trans"
+            app:layout_anchorGravity="center_horizontal" />
+
+
+        <com.hossam.emergency.utils.CoolTextView
+            android:id="@+id/title_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/image_sign_up"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="24dp"
+            android:text="@string/choose_image_create"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/title_image"
+            android:scrollbars="none">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:id="@+id/container_user"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginBottom="4dp"
+                    android:background="@drawable/o_white_trans"
+                    android:gravity="center_vertical"
+                    android:padding="4dp">
+
+                    <ImageView
+                        android:id="@+id/user_icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:layout_margin="4dp"
+                        android:src="@drawable/ic_perm_identity_white_24dp"
+                        android:tint="@color/white" />
+
+                    <AutoCompleteTextView
+                        android:id="@+id/username_sign_up"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="8dp"
+                        android:layout_toEndOf="@id/user_icon"
+                        android:background="@null"
+                        android:hint="@string/username_create"
+                        android:inputType="text"
+                        android:textColor="@color/primary_dark"
+                        android:textColorHint="@color/primary"
+                        android:textCursorDrawable="@null"
+                        android:textSize="16sp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/container_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/container_user"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginBottom="4dp"
+                    android:background="@drawable/o_white_trans"
+                    android:gravity="center_vertical"
+                    android:padding="4dp">
+
+                    <ImageView
+                        android:id="@+id/email_icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:layout_margin="4dp"
+                        android:src="@drawable/ic_mail_white_24dp"
+                        android:tint="@color/white" />
+
+                    <AutoCompleteTextView
+                        android:id="@+id/email_sign_up"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="8dp"
+                        android:layout_toEndOf="@id/email_icon"
+                        android:background="@null"
+                        android:hint="@string/email_create"
+                        android:inputType="textEmailAddress"
+                        android:textColor="@color/primary_dark"
+                        android:textColorHint="@color/primary"
+                        android:textCursorDrawable="@null"
+                        android:textSize="16sp" />
+
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/container_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/container_email"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginBottom="4dp"
+                    android:background="@drawable/o_white_trans"
+                    android:gravity="center_vertical"
+                    android:padding="4dp">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/phone_icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:layout_margin="4dp"
+                        android:src="@drawable/ic_phone_iphone_white_24dp"
+                        android:tint="@color/white" />
+
+
+                    <AutoCompleteTextView
+                        android:id="@+id/phone_sign_up"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="8dp"
+                        android:layout_toEndOf="@id/phone_icon"
+                        android:background="@null"
+                        android:hint="@string/mobile_create"
+                        android:inputType="phone"
+                        android:textColor="@color/primary_dark"
+                        android:textColorHint="@color/primary"
+                        android:textCursorDrawable="@null"
+                        android:textSize="16sp" />
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/container_country"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/container_phone"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginBottom="4dp"
+                    android:background="@drawable/o_white_trans"
+                    android:gravity="center_vertical"
+                    android:padding="4dp">
+
+                    <!--<ImageView-->
+                    <!--android:id="@+id/country_icon"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_alignParentStart="true"-->
+                    <!--android:layout_centerVertical="true"-->
+                    <!--android:layout_margin="4dp"-->
+                    <!--android:src="@drawable/baseline_language_white_24"-->
+                    <!--android:tint="@color/white" />-->
+
+                    <!--<AutoCompleteTextView-->
+                    <!--android:id="@+id/country_text"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_centerVertical="true"-->
+                    <!--android:layout_marginStart="8dp"-->
+                    <!--android:layout_toEndOf="@id/country_icon"-->
+                    <!--android:background="@null"-->
+                    <!--android:hint="@string/country_name"-->
+                    <!--android:inputType="textPassword"-->
+                    <!--android:textColor="@color/white"-->
+                    <!--android:textColorHint="@color/white_trans"-->
+                    <!--android:textCursorDrawable="@null"-->
+                    <!--android:textSize="16sp" />-->
+
+
+                    <com.hbb20.CountryCodePicker
+                        android:id="@+id/ccp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        app:ccp_autoDetectCountry="true"
+                        app:ccp_contentColor="@color/primary_dark"
+                        app:ccp_showFullName="true"
+                        app:ccp_showNameCode="false"
+                        app:ccp_showPhoneCode="false"
+                        app:ccp_textGravity="LEFT" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/container_pass"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/container_country"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginBottom="4dp"
+                    android:background="@drawable/o_white_trans"
+                    android:gravity="center_vertical"
+                    android:padding="4dp">
+
+                    <ImageView
+                        android:id="@+id/pass_icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:layout_margin="4dp"
+                        android:src="@drawable/ic_lock_outline_white_24dp"
+                        android:tint="@color/white" />
+
+                    <AutoCompleteTextView
+                        android:id="@+id/password_sign_up"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="8dp"
+                        android:layout_toEndOf="@id/pass_icon"
+                        android:background="@null"
+                        android:inputType="textPassword"
+                        android:hint="@string/password_create"
+                        android:paddingEnd="8dp"
+                        android:textColor="@color/primary_dark"
+                        android:textColorHint="@color/primary"
+                        android:textCursorDrawable="@null"
+                        android:textSize="16sp" />
+
+
+                </RelativeLayout>
+
+
+                <CheckBox
+                    android:id="@+id/check_terms"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/container_pass"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginBottom="2dp"
+                    android:linksClickable="true"
+                    android:text="@string/by_signing_up"
+                    android:textColor="@color/white"
+                    android:textColorHighlight="@color/white"
+                    android:textSize="12sp"
+                    android:theme="@style/checkBoxStyle_terms" />
+
+
+                <com.hossam.emergency.utils.CoolTextView
+                    android:id="@+id/read_terms"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/check_terms"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:autoLink="web"
+                    android:gravity="center_horizontal"
+                    android:linksClickable="true"
+                    android:text="@string/read_it"
+                    android:textColor="@color/white"
+                    android:textSize="14sp" />
+
+
+                <Button
+                    android:id="@+id/btn_sign_up"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/read_terms"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="32dp"
+                    android:layout_marginEnd="32dp"
+                    android:layout_marginBottom="32dp"
+                    android:background="@drawable/o_orange"
+                    android:text="@string/create_account"
+                    android:textColor="@color/white"
+                    android:textSize="14sp" />
+
+                <RelativeLayout
+                    android:id="@+id/next_btn_sign_up"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="16dp"
+                    android:background="@drawable/o_red"
+                    android:gravity="center_vertical"
+                    android:padding="8dp">
+
+                    <com.hossam.emergency.utils.CoolTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:text="Next"
+                        android:textColor="@color/white"
+                        android:textSize="18sp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="8dp"
+                        android:src="@drawable/baseline_keyboard_arrow_right_white_24"
+                        android:tint="@color/white" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/container_signup"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:orientation="vertical">
+
+
+                    <AutoCompleteTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:background="@drawable/square_grey_trans"
+                        android:backgroundTint="@color/white"
+                        android:drawableStart="@drawable/ic_phone_iphone_white_24dp"
+                        android:drawablePadding="8dp"
+                        android:drawableTint="@color/green_solid"
+                        android:gravity="start"
+                        android:hint="@string/mobile_create"
+                        android:inputType="number"
+                        android:maxLines="1"
+                        android:padding="8dp"
+                        android:textColor="@color/grey"
+                        android:textCursorDrawable="@null"
+                        android:textIsSelectable="false"
+                        android:textSize="14sp" />
+
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/sign_up_container"
+                        android:layout_margin="8dp"
+                        android:background="@drawable/o_red"
+                        android:text="@string/create_account"
+                        android:textColor="@color/grey"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+
+        </ScrollView>
+
+
+        <!--<com.hossam.emergency.utils.CoolTextView-->
+        <!--android:id="@+id/title_sign_up"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_below="@id/toolbar_sign_up"-->
+        <!--android:layout_gravity="center_horizontal"-->
+        <!--android:layout_marginBottom="24dp"-->
+        <!--android:layout_marginEnd="16dp"-->
+        <!--android:layout_marginStart="16dp"-->
+        <!--android:layout_marginTop="4dp"-->
+        <!--android:text="Create Account"-->
+        <!--android:textColor="@color/white"-->
+        <!--android:textSize="24sp" />-->
+
+        <!--<com.hbb20.CountryCodePicker-->
+        <!--android:id="@+id/ccp"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content" />-->
+
+    </RelativeLayout>
+</RelativeLayout>

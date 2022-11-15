@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/activity_list_cases">
+
+    <!--    <RelativeLayout-->
+    <!--        android:id="@+id/empty_view"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="50dp"-->
+    <!--        android:background="@color/white"-->
+    <!--        android:orientation="vertical" />-->
+
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/swipeContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/content">
+
+        <androidx.recyclerview.widget.RecyclerView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/list_cases_recycler"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:fillViewport="true"
+            android:scrollbars="none" />
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+    <ImageView
+        android:id="@+id/no_data_image"
+        android:layout_width="match_parent"
+        android:layout_height="420dp"
+        android:layout_centerInParent="true"
+        android:layout_margin="16dp"
+        android:autoMirrored="true"
+        android:src="@drawable/ic_nodata"
+        android:visibility="invisible" />
+
+    <ProgressBar
+        android:id="@+id/progress_list_cases"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:visibility="invisible" />
+
+    <include
+        android:id="@+id/content"
+        layout="@layout/content_list_cases" />
+</RelativeLayout>

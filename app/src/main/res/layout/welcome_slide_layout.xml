@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/relativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_s"
+    android:fitsSystemWindows="true">
+
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="480dp"
+        android:src="@drawable/ic_winner"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/coolTextView"
+        app:layout_constraintVertical_bias="0.341" />
+
+    <com.hossam.emergency.utils.CoolTextView
+        android:id="@+id/coolTextView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fitsSystemWindows="true"
+        android:gravity="center_horizontal"
+        android:padding="16dp"
+        android:text="@string/competetion_text"
+        android:textColor="@color/primary"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/coolTextView" />
+
+    <com.hossam.emergency.utils.CoolTextView
+        android:id="@+id/coolTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:fitsSystemWindows="true"
+        android:gravity="center_horizontal"
+        android:text="@string/prize_text"
+        android:textColor="@color/yellow5"
+        android:textSize="36dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.hossam.emergency.utils.CoolTextView
+        android:id="@+id/source_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:text="@string/details_text"
+        android:textColor="@color/primary_dark"
+        android:textSize="@dimen/description_text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/coolTextView2"
+        app:layout_constraintVertical_bias="0.795" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="48dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

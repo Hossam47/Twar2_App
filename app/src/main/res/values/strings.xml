@@ -1,0 +1,342 @@
+<resources>
+    <string name="app_name">Twar2 App</string>
+    <string name="navigation_drawer_open" translatable="false">Open navigation drawer</string>
+    <string name="navigation_drawer_close" translatable="false">Close navigation drawer</string>
+
+    <string name="facebook_app_id" translatable="false"></string>
+    <string name="fb_login_protocol_scheme" translatable="false"></string>>
+
+    <string name="account_kit_client_token" translatable="false"></string>
+    <string name="account_kit_protocol_scheme" translatable="false"></string>
+
+    <string name="four_square_client_id" translatable="false"></string>
+    <string name="four_square_client_secret" translatable="false"></string>
+
+    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false"></string>
+    <!-- google ads-->
+
+
+
+    <string name="action_privacy" translatable="false">Privacy Policy</string>
+    <string name="action_terms" translatable="false">Terms &amp; Conditions</string>
+
+    <string name="action_refresh">Refresh</string>
+    <string name="action_location">Location</string>
+    <string name="action_search">Search</string>
+    <!-- intro-->
+
+    <string name="intro_welcome">التطبيق الاول فى مصر لحالات الطوارئ الحاصل على المركز الاول فى الشرق الاوسط وشمال افريقيا من Facebook </string>
+
+    <string name="intro">التطبيق حاصل على المركز الاول فى شمال افريقيا والشرق الاوسط فى مجال خدمة المجتمع من Facebook </string>
+
+    <!--    <string name="rate_comic">ال Developer بيسلم عليك وبيقولك روح قيم ال App على ال playstore واكتب review حلو زيك كده , واقفل باب التطبيق وراك </string>-->
+    <string name="rate_comic">وحياة ام ال App يا users الى ما هيدخل يقيم التطبيق على Playstore ويكتب review حلو زيه كده
+        , ما هخليه يعرف يخرج من ال App ال لو عمل restart </string>
+
+<!--    <string name="rate_comic">ممكن تعمل Rate للتطبيق و Review حلو زيك كده ❤️</string>-->
+    <string name="yes_rate">من عنيا ❤️</string>
+    <string name="no_rate">لأ مش هعمل Rate 😡</string>
+    <string name="response_rate">هى ده ال mentailty ال اتعلمتها فى ال school !</string>
+
+    <!-- messages -->
+
+    <string name="message_forget_password">Write your email to rest password</string>
+    <string name="rest_password">Rest</string>
+
+
+    <!-- Case Type -->
+
+    <string name="case_type">Case type</string>
+    <string name="choose_case_type">Choose case type</string>
+    <string name="set_type_case">Please set case type</string>
+    <string name="accident_type_case">Accident</string>
+
+    <string name="kidnapping_type_case">Kidnapping</string>
+
+    <string name="helping_type_case">Helping</string>
+
+    <string name="lost_found_type_case">Lost / Found</string>
+
+
+    <!-- Create-->
+
+    <string name="choose_image_create">Choose image</string>
+
+    <string name="first_name_create">First name</string>
+
+    <string name="username_create">Username</string>
+
+    <string name="last_name_create">Last name</string>
+
+    <string name="email_create">Email</string>
+
+    <string name="email_format">Format wrong</string>
+
+    <string name="mobile_create">Mobile number</string>
+
+    <string name="male_create">Male</string>
+
+    <string name="female_create">Female</string>
+
+    <string name="password_create">Password</string>
+
+    <string name="country_name">Country</string>
+
+    <string name="choose_country_name">Choose Country</string>
+
+    <string name="choose_country_egypt">Choose Egypt </string>
+
+    <string name="password_length">Password must at minimum 7 chars</string>
+
+
+    <string name="password_conf_create">Confirm password</string>
+
+    <string name="account_create">Create</string>
+
+    <string name="sign_in_create">Sign in</string>
+
+    <string name="remember_create">Remember me</string>
+
+    <string name="login_create">Sign in</string>
+
+    <string name="create_account">Sign up</string>
+
+    <string name="register">Register</string>
+
+    <string name="forget_password">Forget password</string>
+
+    <string name="by_signing_up">I agree to the Terms and Conditions</string>
+
+    <string name="by_signing_in">By Signing in you agree to Twar2 App Terms &amp; Conditions</string>
+
+    <string name="read_it">Read it from here</string>
+
+    <string name="registration_activity">Registration</string>
+    <!--login_message-->
+
+    <string name="email_wrong_login_message">Wrong email</string>
+
+    <string name="pass_wrong_login_message">Wrong password</string>
+
+    <string name="wrong_data">Wrong in Email or Password </string>
+
+    <string name="verification_login_message">Verification email sent to </string>
+
+    <string name="falid_verification_login_message"> Failed to send verification email </string>
+
+    <string name="write_pass_login_message">Please write email  </string>
+
+    <string name="sent_pass_login_message">Password sent successfully to your email </string>
+
+    <string name="account_found_login_message">Account not found  </string>
+
+    <string name="please_waiting_progress_message">Please waiting .......</string>
+
+    <string name="try_again">Sorry something wrong please try again</string>
+    <string name="title_activity_maps">Map</string>
+
+
+    <string name="action_share">Share</string>
+
+    <string name="action_about">Developer</string>
+
+    <string name="action_rate">Rate us</string>
+
+    <string name="action_feed">Feedback</string>
+
+    <string name="action_sign_out">Sign out</string>
+
+
+    <!--Case-->
+    <string name="add_case">Add Case</string>
+    <string name="case_location">Case location</string>
+    <string name="set_location_message_location">Please set Location</string>
+    <string name="image_library">Images</string>
+    <string name="all_image_library">All Images</string>
+    <string name="limite_image_library">Limit Reached !</string>
+    <string name="select_image_library">Nothing Selected !</string>
+    <string name="get_location_activity">Get location</string>
+
+    <string name="title_case">Please write short title</string>
+    <string name="desc_case">Describe your case</string>
+    <string name="mobile_case">Show mobile number</string>
+    <string name="profile_case">Show profile image</string>
+    <string name="location_case">Location</string>
+    <string name="Images_case">Images</string>
+    <string name="publish_case">Publish</string>
+    <string name="edit_case">Save Edit</string>
+    <string name="title_message_case">Please write a title </string>
+    <string name="desc_message_case">Please write case description </string>
+    <string name="edit_case_message_case">Case is edited </string>
+    <string name="range_case">You will send a notification to all users in range</string>
+    <string name="km_case">km</string>
+
+
+    <!--Fonts-->
+
+    <string name="quicksand" translatable="false">quicksand</string>
+    <string name="cairo" translatable="false">cairo</string>
+    <string name="tajawal" translatable="false">tajawal</string>
+    <string name="chrobot" translatable="false">chrobot</string>
+
+
+    <!--Services-->
+
+    <string name="gps_services_on">Location on</string>
+    <string name="gps_services_off">Location off</string>
+    <string name="network_services_on">Online</string>
+    <string name="network_services_off">Offline</string>
+
+    <!--main-->
+
+    <string name="title_cases">Latest five cases</string>
+    <string name="see_more">See more</string>
+
+
+    <!--reaction-->
+
+    <string name="fire_reaction_text">Fire </string>
+    <string name="comment_reaction_text">Comment </string>
+    <string name="view_reaction_text">View </string>
+    <string name="useful_reaction_text">Useful </string>
+    <string name="shit_reaction_text">Shit </string>
+
+
+    <string name="zero_reaction_value">0</string>
+
+    <!--details_activity-->
+    <string name="numbers_comment">Comment </string>
+    <string name="write_comment"> write comment ... </string>
+    <string name="write_reply"> write reply ... </string>
+    <string name="number_private">Number is private</string>
+
+    <!--posts-->
+    <string name="delete_post">Delete </string>
+    <string name="saved_post">Saved </string>
+    <string name="edit_post">Edit </string>
+    <string name="delete_post_message">Your cases is deleted successfully</string>
+    <string name="saved_post_message">Great.. !</string>
+    <string name="unfollow_post_message">Done</string>
+    <string name="unfollow_post">Unfollow  </string>
+
+
+    <!--profile_activity-->
+    <string name="profile_update">Update</string>
+
+    <!--list_case-->
+    <string name="follow_case_list">Follow</string>
+    <string name="unfollow_case_list">Unfollow</string>
+    <string name="following_case_list">following</string>
+
+    <!--details_activity-->
+    <string name="write_message">Write message... </string>
+
+
+    <!--profile_activity-->
+    <string name="show_profile_image">Show profile image</string>
+    <string name="private_message">Direct message</string>
+    <string name="phone_call">Phone call</string>
+
+
+    <!--notification_activity-->
+    <string name="case_notification">New Case !</string>
+    <string name="saved_case_notification">Case is saved now</string>
+    <string name="message_notification">New Message</string>
+    <string name="comment_notification">New Comment</string>
+
+
+    /////////////////////////////////////////////////
+
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="rationale_location_contacts">Images permission is required</string>
+
+    <!--    navigation_view-->
+
+    <string name="profile_navigation">Profile</string>
+    <string name="mycases_navigation">My Cases</string>
+    <string name="following_cases_navigation">Following Cases</string>
+    <string name="sign_out">Sign out</string>
+
+
+    <!-- main_view-->
+
+    <string name="cases_main">Cases</string>
+    <string name="alerts_main">Alerts</string>
+    <string name="inbox_main">Inbox</string>
+
+
+    <!-- filteration-->
+
+    <string name="fire_filter">Fire</string>
+    <string name="time_filter">Time</string>
+    <string name="near_filter">Near</string>
+    <string name="save_filter">Saved</string>
+
+
+    <!-- deatlis-->
+
+    <string name="chat_details">Chat</string>
+    <string name="call_details">Call</string>
+    <string name="street_details">View</string>
+    <string name="place_details">Place</string>
+
+    <!-- reactions-->
+
+    <string name="like_react">Like</string>
+    <string name="dislike_react">Dislike</string>
+    <string name="replyreact">Reply</string>
+    <string name="replies_dialog">Replies</string>
+
+
+    <!--    intro-->
+    <string name="init_your_profile">Profile setup</string>
+    <string name="start_your_init">Start Initialization</string>
+    <string name="already_init">Already initialized !</string>
+    <string name="done_text">Your Account is ready</string>
+    <string name="dont_text"> "Don't" see this slides again !</string>
+    <string name="prize_text">Awards</string>
+    <string name="details_text">More details</string>
+    <string name="competetion_text">Twar2 App got the First place in Developer Circles Community Challenge from Facebook in Middle East and North
+Africa in 2018.</string>
+
+
+    <!--Settings-->
+
+    <string name="arabic_lang">Arabic</string>
+    <string name="english_lang">English</string>
+    <string name="language_text">Language</string>
+    <string name="save_settings">Save</string>
+    <string name="check_location_dialog">Don\'t show this message again</string>
+    <string name="information_by_two_pounds">Tip to determine your location</string>
+    <string name="gps_find_places_near_me_fun">Please write the name of the place(Market, Restaurant) in the first box, and the name of the city or area in the second box</string>
+    <!--    <string name="gps_find_places_near_me_fun">هتلاقى ام خانة مكتوب فيها find places هتكتب فى امها اسم المكان الى انت عاوز تحدد مكانه ,تحتها هتلاقى خانه مكتوب فيها Near me هتكتب فيها اسم منطقة ال موجود فى امها اسم ام المكان الى حضرتك لسه كاتبه, يعنى لو عاوز تحدد مكان كنتاكى الى فى ميدان التحرير , هتكتب فى الاول كنتاكى , والتانى ميدان التحرير, فهمت والا هنبدأ من أ أرنب, ب بطة ؟</string>-->
+    <string name="location_message">Please open Gps</string>
+    <string name="got_it_message">Okay</string>
+    <string name="cancel_it_message">Cancel</string>
+    <string name="on_click_back">Please click back again to exit</string>
+
+    <string name="intro_what_twar2">What is Twar2 App and how does it help us? </string>
+    <string name="intro_what_tear2_details">Twar2 app explained simply, that if you get in trouble and need help from the people closest to you in the same geographic location, you will open the app and write the details of your issue with some pictures if any, and specify the geographical extent within which the app will send a notification to all the people in the same range, until they come To help you.</string>
+    <string name="intro_exambles">Examples of how to use the app</string>
+    <string name="example_car">Examples 1
+
+Your car broke down in a tricky place for some reason. With the Twar2 App, you will write that your car has broken down and specify the necessary details, as well as the geographical range (20 km for example). Then a notification will be sent to all people within the geographic range you previously specified for your condition and problem (Definitely not necessary to provide people with your real location in case you don\'t want to).
+
+</string>
+    <string name="intro_examble1">Example 2
+
+If you were  in the hospital and needed someone to donate blood to you, you can write your problem with, for example, the details of the blood type, the name of the hospital, and the condition, and it is also possible to activate a mobile number to be communicated through it, and the notification will be sent to people in the same steps as the previous example
+    </string>
+    <string name="intro_examble2">Example 3
+
+If you forgot important papers or things somewhere, instead of going by yourself and looking for them, you can specify the place where you were and publish your problem with details to contact you (a mobile number for example) or enable chatting, then the notification will reach people and they can contact you in case they are found The things.
+
+    </string>
+    <string name="intro_final_tip">Twar2 App is not responsible for its misuse in any way, and any user is the only one responsible for the privacy and importance of the data that he published through it.
+
+    </string>
+    <string name="important_tips">Important notes:</string>
+    <string name="google_places_key" templateMergeStrategy="preserve"
+        translatable="false"></string>
+</resources>

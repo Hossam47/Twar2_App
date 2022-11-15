@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.my_cases.MyCasesActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="?actionBarSize">
+
+            <androidx.recyclerview.widget.RecyclerView xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/my_cases_recycler"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/toolbar"
+                android:layout_marginStart="4dp"
+                android:layout_marginEnd="4dp"
+                android:scrollbars="none" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+    <com.victor.loading.rotate.RotateLoading
+        android:id="@+id/rotate_loading_mycases"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_centerInParent="true"
+        app:loading_color="@color/accent"
+        app:loading_width="5dp" />
+
+    <ImageView
+        android:id="@+id/no_cases_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:orientation="vertical"
+        android:src="@drawable/ic_nodata"
+        android:visibility="invisible" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_size"
+        android:background="@color/primary"
+        android:theme="@style/ToolbarColoredBackArrow"
+        app:popupTheme="@style/AppTheme" />
+
+    <View
+        android:id="@+id/toolbar_shadow"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_below="@id/toolbar"
+        android:background="@drawable/toolbar_dropshadow" />
+</RelativeLayout>

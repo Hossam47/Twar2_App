@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--<android.support.v7.widget.CardView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_margin="4dp"-->
+    <!--app:cardCornerRadius="8dp"-->
+    <!--app:cardElevation="4dp">-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!--<include-->
+        <!--android:id="@+id/container_part2"-->
+        <!--layout="@layout/part_two_details_activity" />-->
+
+        <com.hossam.emergency.utils.CoolTextView
+            android:id="@+id/comments_numbers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:textColor="@color/grey"
+            android:textSize="12sp" />
+
+        <androidx.recyclerview.widget.RecyclerView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/comments_cases_details_recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/comments_numbers"
+            android:layout_gravity="start|center_vertical"
+            android:paddingBottom="?actionBarSize"
+            android:scrollbars="none" />
+
+    </RelativeLayout>
+    <!--</android.support.v7.widget.CardView>-->
+</LinearLayout>

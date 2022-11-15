@@ -1,0 +1,4 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@color/grey_trans" android:state_focused="false" /> <!-- not focused -->
+    <item android:drawable="@color/orange_solid" android:state_focused="true" /> <!-- focused -->
+</selector>

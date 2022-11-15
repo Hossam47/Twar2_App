@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/image_reply_items"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_centerVertical="true"
+        android:layout_margin="4dp"
+        android:scaleType="centerCrop"
+        app:border_color="@color/white_trans_50"
+        app:border_width="2dp" />
+
+    <RelativeLayout
+        android:id="@+id/container_reply"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:layout_toEndOf="@id/image_reply_items"
+        android:background="@drawable/o_white_trans"
+        android:orientation="vertical"
+        android:padding="4dp">
+
+        <RelativeLayout
+            android:id="@+id/reply_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.hossam.emergency.utils.CoolTextView
+                android:id="@+id/name_reply_items"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/primary_text"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <com.hossam.emergency.utils.CoolTextView
+                android:id="@+id/time_reply_items"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="4dp"
+                android:layout_toEndOf="@id/name_reply_items"
+                android:textColor="@color/grey"
+                android:textSize="8sp" />
+
+        </RelativeLayout>
+
+        <com.hossam.emergency.utils.CoolTextView
+            android:id="@+id/reply_reply_items"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/reply_text"
+            android:layout_margin="8dp"
+            android:gravity="center_horizontal|center_vertical"
+            android:textColor="@color/primary_text"
+            android:textSize="14sp" />
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/container_reply"
+        android:layout_marginStart="16dp"
+        android:layout_toEndOf="@id/image_reply_items"
+        android:gravity="start">
+
+        <LinearLayout
+            android:id="@+id/useful_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="16dp"
+            android:gravity="center_horizontal|center_vertical"
+            android:orientation="horizontal">
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="4dp"
+                android:src="@drawable/baseline_thumb_up_alt_white_24"
+                android:tint="@color/green_solid" />
+
+            <com.hossam.emergency.utils.CoolTextView
+                android:id="@+id/useful_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="4dp"
+                android:gravity="center_vertical"
+                android:text="@string/like_react"
+                android:textColor="@color/primary_dark"
+                android:textSize="10sp"
+                android:visibility="visible" />
+
+            <com.hossam.emergency.utils.CoolTextView
+                android:id="@+id/useful_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="2dp"
+                android:textColor="@color/primary_text"
+                android:gravity="center_vertical"
+                android:textSize="10sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/haped_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_toEndOf="@+id/useful_container"
+            android:gravity="center_horizontal|center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="4dp"
+                android:src="@drawable/baseline_thumb_down_alt_white_24"
+                android:tint="@color/red2" />
+
+            <com.hossam.emergency.utils.CoolTextView
+                android:id="@+id/haped_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="4dp"
+                android:gravity="center_vertical"
+                android:text="@string/dislike_react"
+                android:textColor="@color/primary_dark"
+                android:textSize="10sp"
+                android:visibility="visible" />
+
+            <com.hossam.emergency.utils.CoolTextView
+                android:id="@+id/haped_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="4dp"
+                android:textColor="@color/primary_text"
+                android:gravity="center_vertical"
+                android:textSize="10sp" />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

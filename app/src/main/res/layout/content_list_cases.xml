@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/toolbar_list_case"
+    android:layout_gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/style_bar_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        app:cardElevation="4dp">
+        <!--        app:cardCornerRadius="8dp"-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="4dp">
+
+            <LinearLayout
+                android:id="@+id/timeline_filter_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/square_red_trans"
+                android:gravity="center_horizontal|center_vertical"
+                android:orientation="horizontal"
+                android:padding="4dp">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/timeline_filter_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginEnd="4dp"
+                    android:src="@drawable/baseline_timeline_white_18"
+                    android:tint="@color/red_solid" />
+
+                <com.hossam.emergency.utils.CoolTextView
+                    android:id="@+id/timeline_filter_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginEnd="4dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/time_filter"
+                    android:textColor="@color/grey"
+                    android:textSize="@dimen/number_text" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/fire_filter_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:gravity="center_horizontal|center_vertical"
+                android:orientation="horizontal"
+                android:padding="4dp">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/fire_filter_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginEnd="4dp"
+                    android:src="@drawable/baseline_whatshot_white_18"
+                    android:tint="@color/grey_trans" />
+
+                <com.hossam.emergency.utils.CoolTextView
+                    android:id="@+id/fire_filter_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginEnd="4dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/fire_filter"
+                    android:textColor="@color/grey"
+                    android:textSize="@dimen/number_text" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/near_filter_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:gravity="center_horizontal|center_vertical"
+                android:orientation="horizontal"
+                android:padding="4dp">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/near_filter_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginEnd="4dp"
+                    android:src="@drawable/baseline_near_me_white_18"
+                    android:tint="@color/grey_trans" />
+
+                <com.hossam.emergency.utils.CoolTextView
+                    android:id="@+id/near_filter_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginEnd="4dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/near_filter"
+                    android:textColor="@color/grey"
+                    android:textSize="@dimen/number_text" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/saved_filter_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:gravity="center_horizontal|center_vertical"
+                android:orientation="horizontal"
+                android:padding="4dp">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/saved_filter_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginEnd="4dp"
+                    android:src="@drawable/baseline_security_white_18"
+                    android:tint="@color/grey_trans" />
+
+                <com.hossam.emergency.utils.CoolTextView
+                    android:id="@+id/saved_filter_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginEnd="4dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/save_filter"
+                    android:textColor="@color/grey"
+                    android:textSize="@dimen/number_text" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+        <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_gravity="center_vertical"-->
+        <!--android:gravity="center_vertical"-->
+        <!--android:orientation="vertical">-->
+
+        <!--<com.hossam.emergency.utils.CoolTextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_margin="4dp"-->
+        <!--android:gravity="center_vertical"-->
+        <!--android:text="Distance in KM" />-->
+
+        <!--<com.xw.repo.BubbleSeekBar-->
+        <!--android:id="@+id/seek_bar"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_gravity="center_vertical"-->
+        <!--android:gravity="center_vertical"-->
+        <!--app:bsb_bubble_color="@color/red_trans"-->
+        <!--app:bsb_bubble_text_color="@color/white"-->
+        <!--app:bsb_max="100"-->
+        <!--app:bsb_min="1"-->
+        <!--app:bsb_progress="10"-->
+        <!--app:bsb_second_track_color="@color/red_solid"-->
+        <!--app:bsb_section_count="10"-->
+        <!--app:bsb_section_text_position="bottom_sides"-->
+        <!--app:bsb_show_section_mark="true"-->
+        <!--app:bsb_show_thumb_text="true"-->
+        <!--app:bsb_track_color="@color/white" />-->
+        <!--</LinearLayout>-->
+    </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".ui.detalis_cases.DetailsCases">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:theme="@style/Theme.UiResources.AppBarOverlay">
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:id="@+id/toolbar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/gnt_white"
+            app:contentScrim="@color/gnt_white"
+            app:layout_scrollFlags="scroll|enterAlways|enterAlwaysCollapsed"
+            app:toolbarId="@+id/toolbar">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/images_cases_details_recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="256dp"
+                android:background="@color/grey"
+                android:layout_marginTop="@dimen/toolbar_size"
+                app:layout_collapseMode="parallax" />
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/toolbar_size"
+                app:layout_collapseMode="pin"
+                android:background="@color/primary_dark_trans_2"
+                app:navigationIcon="?attr/homeAsUpIndicator" />
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/image_details_part_one"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        app:layout_anchorGravity="bottom"
+        android:src="@drawable/ic_perm_identity_white_24dp"
+        android:tint="@color/orange_solid"
+        android:layout_marginStart="16dp"
+        app:layout_anchor="@id/app_bar" />
+<!--    <include-->
+<!--        android:id="@+id/content_details" />-->
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

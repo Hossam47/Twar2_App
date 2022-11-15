@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+<!--    <item-->
+<!--        android:id="@+id/action_search_location"-->
+<!--        android:icon="@drawable/ic_searchglass_white"-->
+<!--        android:iconTint="@color/accent"-->
+<!--        android:orderInCategory="100"-->
+<!--        android:title="@string/action_search"-->
+<!--        app:showAsAction="always" />-->
+    <item
+        android:id="@+id/action_current_location"
+        android:icon="@drawable/baseline_location_on_white_24"
+        android:iconTint="@color/accent"
+        android:orderInCategory="100"
+        android:title="@string/action_location"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/action__btn_refresh"
+        android:icon="@drawable/baseline_sync_white_24"
+        android:iconTint="@color/accent"
+        android:orderInCategory="100"
+        android:title="@string/action_refresh"
+        app:showAsAction="always" />
+
+
+</menu>
